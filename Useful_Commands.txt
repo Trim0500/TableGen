@@ -1,0 +1,9 @@
+Docker dir: /root/comp348/C Code/Assignment 1/Resources/
+
+WIndows dir: C:\\Users\\trist\\Documents\\comp348\\C Code\\Assignment 1\\Resources\\
+
+gcc -o tablegen.exe generate.c  generate.h  io.c  io.h  sort.c  sort.h  tablegen.c
+
+gcc -Wall -ggdb -gdwarf-4 Compare.c  Compare.h  FileIO.c  FileIO.h  Main.c  TableGen.c  TableGen.h
+
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./a.out
