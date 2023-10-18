@@ -11,10 +11,10 @@
 
 #define STRING_MAX_LIMIT 2048
 
-#define FIRST_NAME_FILE_LOCATION "/root/comp348/C Code/Assignment 1/Resources/first_names.txt"
-#define LAST_NAME_FILE_LOCATION "/root/comp348/C Code/Assignment 1/Resources/last_names.txt"
-#define COUNTRY_NAME_FILE_LOCATION "/root/comp348/C Code/Assignment 1/Resources/countries.txt"
-#define EMAIL_SUFFIX_FILE_LOCATION "/root/comp348/C Code/Assignment 1/Resources/email_suffixes.txt"
+#define FIRST_NAME_FILE_LOCATION "..\\..\\Resources\\first_names.txt"
+#define LAST_NAME_FILE_LOCATION "..\\..\\Resources\\last_names.txt"
+#define COUNTRY_NAME_FILE_LOCATION "..\\..\\Resources\\countries.txt"
+#define EMAIL_SUFFIX_FILE_LOCATION "..\\..\\Resources\\email_suffixes.txt"
 
 #define NAME_LOWER_RANGE 0
 #define NAME_UPPER_RANGE 999
@@ -526,7 +526,7 @@ void InitColumnOptionsMenu() {
         scanf("%s", keyboardContinueInput);
     } while (keyboardContinueInput[0] != 'c' && keyboardContinueInput[0] != 'C');
 
-    system("clear");
+    system("cls");
 
     InitTableGenMenu();
 }
@@ -558,7 +558,7 @@ void InitTableGenMenu() {
         } while (keyboardExitCharacter[0] == '\n');
     }
     else {
-        system("clear"); // Might have to change to clear when doing the docker build
+        system("cls"); // Might have to change to clear when doing the docker build
 
         InitColumnOptionsMenu();
     }

@@ -6,7 +6,7 @@
 
 #define STRING_MAX_LIMIT 2048
 
-#define FILE_LOCATION_PREFIX "/root/comp348/C Code/Assignment 1/Output/"
+#define FILE_LOCATION_PREFIX "..\\..\\Output\\"
 
 char** ReadFileContent(char* fileLocation, int stringCount) {
     char **stringListPointer = malloc(stringCount * sizeof(char *));
